@@ -1,15 +1,12 @@
 import React from 'react'
+import { BrowserRouter } from "react-router-dom";
 import './Explorer.css'
 import Router from './Router'
 
-class Explorer extends React.Component {
-  render() {
-    return (
-      <div>
-        <Router />
-      </div>
-    )
-  }
+export default function Explorer() {
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  )
 }
-
-export default Explorer
