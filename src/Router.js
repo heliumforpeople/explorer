@@ -10,14 +10,13 @@ import ErrorView from './pages/ErrorView'
 
 const Router = () => (
   <Switch>
-    <Route exact path="/" component={Index}></Route>
-    <Route path="/blocks/:hash" component={BlockView}></Route>
-    <Route path="/txns/:hash" component={TxnView}></Route>
-    <Route path="/accounts/:address" component={AccountView}></Route>
-    <Route path="/hotspots/:address" component={HotspotView}></Route>
-    <Route path="/error" component={ErrorView}></Route>
+    <Route exact path="/" component={Index} />
+    <Route path="/blocks/:hash" component={BlockView} />
+    <Route path="/txns/:hash" component={TxnView} />
+    <Route path="/accounts/:address" component={AccountView} />
+    <Route path="/hotspots/:address" component={HotspotView} />
+    <Route path="/error" component={ErrorView} />
   </Switch>
 )
-
 
 export default Router
